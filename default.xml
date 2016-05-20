@@ -4,18 +4,17 @@
            fetch="git://anongit.freedesktop.org/gstreamer/" />
 
   <remote  name="ryumiel"
-           fetch="https://github.com/ryumiel/" />
+           fetch="ssh://git@github.com/ryumiel/" />
 
-  <default revision="refs/heads/master"
-           remote="anongit" />
+  <default revision="v1.8.1" remote="ryumiel" />
 
-  <project name="gstreamer" remote="anongit"/>
-  <project name="gst-plugins-base" remote="anongit"/>
-  <project name="gst-plugins-good" remote="anongit"/>
+  <project name="gstreamer" remote="ryumiel"/>
+  <project name="gst-plugins-base" remote="ryumiel"/>
+  <project name="gst-plugins-good" remote="ryumiel"/>
   <project name="gst-plugins-bad" remote="ryumiel"/>
-  <project name="gst-libav" remote="anongit"/>
   <project name="gst-omx" remote="ryumiel"/>
-  <project name="gstreamer-vaapi" remote="anongit"  />
-  <project name="gstgltestplayer" remote="ryumiel"/>
+  <project name="gstreamer-vaapi" remote="anongit" revision="master" />
+  <project name="gst-libav" remote="anongit" revision="master"/>
+  <project name="gstgltestplayer" remote="ryumiel" revision="master"/>
 
 </manifest>
